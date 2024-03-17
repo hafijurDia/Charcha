@@ -6,20 +6,24 @@ import Toggle from "./components/toggle/Toggle";
 import { useContext, useEffect, useState } from "react";
 import { ThemeContext } from "./context";
 import Offcanvas from './OffCanvas'
+import Header from "./components/header/Header";
+import Container from 'react-bootstrap/Container';
 // import { useState } from "react";
 
 function App() {
 const theme= useContext(ThemeContext)
 const darkMode= theme.state.darkMode; 
   return (
-    <div style={{ backgroundColor: darkMode? "#222": "lightyellow", color: darkMode?  "white" : "#000" }}>
-      <Offcanvas />
+    <div style={{ backgroundColor: darkMode? "#222": "#ffffff", color: darkMode?  "white" : "#000" }}>
+      <Container>
+      <Header></Header>
+      {/* <Offcanvas /> */}
    <Toggle />
    <Intro />
    <About />
    <ProductList />
    <Contact />
-   
+   </Container>
    </div>
   );
 }
