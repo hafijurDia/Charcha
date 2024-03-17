@@ -1,0 +1,77 @@
+.c{
+    height: 100vh;
+    position:relative;
+}
+.c-bg{
+  width: 20px;  
+  height: 100vh;
+  /* background: linear gradient(to right, lightgreen , lightblue) ; */
+  /* doesnt work */
+  background-color: lightseagreen;
+  position:absolute
+}
+
+.c-wrapper{
+    display: flex;
+    padding: 50px;
+}
+.c-left{
+    flex:1;
+}
+.c-right{
+    flex:1;
+    display: flex;align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.c-tile{
+    font-size: 5rem;
+    width: 80%;
+}
+.c-info-item{
+margin: 50px 0px;
+    display: flex;
+    align-items:center;
+    /* justify-content: center; */
+    /* flex-direction: column; */
+    font-weight: 300;
+    width: 70%;
+}
+.c-icon{
+    width: 32px;
+    height: 32px;
+    padding-right: 10px;
+}
+.c-descc{
+    font-weight: 200;
+}
+form{
+    margin-top: 20px;
+}
+input{
+    width: 50%;
+    height: 2rem;
+    border: none;
+    border-bottom: 1px solid blue;
+    margin: 10px 0px;
+    font-size: 1rem;
+}
+textarea{
+    width: 100%;
+    font-size: 1rem;
+    padding-left: 10px;
+}
+button{
+    border:none;
+    background-color: lightgreen;
+    color: white;
+    cursor:pointer;
+    font-weight: 500;
+
+}
+button:hover{
+    background-color: white;
+    color:lightgreen;
+
+}
